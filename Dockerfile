@@ -24,5 +24,5 @@ RUN sed -i -e 's/GPU=0/GPU=1/g' Makefile \
  && sed -i -e 's/DEBUG=0/DEBUG=1/g' Makefile
 RUN make
 # download yoloV3 weights
-# RUN mkdir weights \
-#  && wget -P /darknet/weights https://pjreddie.com/media/files/yolov3.weights
+RUN mkdir weights \
+ && wget -P /darknet/weights https://pjreddie.com/media/files/yolov3.weights

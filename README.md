@@ -6,7 +6,7 @@ YoloV3 docker with Cuda, Cudnn and Opencv support. Based on [AlexeyAB darknet](h
 * Install [docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 
 ## Build
-`docker build -t yolo .`
+`docker build -t yolo`
 ## Run
 To run the image with GUI support, first enable docker to access X11s:  
 `xhost +local:docker`  

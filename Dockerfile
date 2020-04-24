@@ -9,8 +9,8 @@ RUN apt-get update \
 # install Cudnn
 ENV CUDNN_VERSION 7.6.0.64
 RUN apt-get update && apt-get install -y --no-install-recommends \
-            libcudnn7=$CUDNN_VERSION-1+cuda9.0 \
-            libcudnn7-dev=$CUDNN_VERSION-1+cuda9.0 && \
+            libcudnn7=$CUDNN_VERSION-1+cuda10.0 \
+            libcudnn7-dev=$CUDNN_VERSION-1+cuda10.0 && \
     apt-mark hold libcudnn7 && \
     rm -rf /var/lib/apt/lists/*
 

@@ -25,4 +25,4 @@ RUN sed -i -e 's/GPU=0/GPU=1/g' Makefile \
 RUN make
 # download yoloV3 weights
 RUN mkdir weights \
- && wget -P /darknet/weights https://pjreddie.com/media/files/yolov4.weights
+ && wget -P /darknet/weights https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights
